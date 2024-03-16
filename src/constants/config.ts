@@ -1,0 +1,43 @@
+import dotenv from 'dotenv'
+dotenv.config()
+
+const envConfig = {
+  PORT: process.env.PORT || 3000,
+  DB_NAME: process.env.DB_NAME || 'test',
+  DB_URI: process.env.DB_URI || 'localhost',
+  DB_COLLECTION_USERS: process.env.DB_COLLECTION_USERS || 'users',
+  DB_COLLECTION_SHOPS: process.env.DB_COLLECTION_SHOPS || 'shops',
+  DB_COLLECTION_CUSTOMERS: process.env.DB_COLLECTION_CUSTOMERS || 'customers',
+  DB_COLLECTION_REFRESH_TOKENS: process.env.DB_COLLECTION_REFRESH_TOKENS || 'refresh_tokens',
+  DB_COLLECTION_ADMINS: process.env.DB_COLLECTION_ADMINS || 'admins',
+  DB_COLLECTION_PARTNERS: process.env.DB_COLLECTION_PARTNERS || 'partners',
+  DB_COLLECTION_RESTAURANTS: process.env.DB_COLLECTION_RESTAURANTS || 'restaurants',
+  DB_COLLECTION_CARDS: process.env.DB_COLLECTION_CARDS || 'cards',
+  DB_COLLECTION_MENUS: process.env.DB_COLLECTION_MENUS || 'menus',
+  DB_COLLECTION_MENU_SECTIONS: process.env.DB_COLLECTION_MENU_SECTIONS || 'menu_sections',
+  DB_COLLECTION_FOOD_TYPES: process.env.DB_COLLECTION_FOOD_TYPES || 'food_types',
+  DB_COLLECTION_CATEGORIES: process.env.DB_COLLECTION_CATEGORIES || 'categories',
+  DB_COLLECTION_FOOD_CATEGORIES: process.env.DB_COLLECTION_FOOD_CATEGORIES || 'food_categories',
+  DB_COLLECTION_FOOD: process.env.DB_COLLECTION_FOOD || 'food',
+  DB_COLLECTION_OPTIONS: process.env.DB_COLLECTION_OPTIONS || 'options',
+  DB_COLLECTION_FOOD_OPTIONS: process.env.DB_COLLECTION_FOOD_OPTIONS || 'food_options',
+  HASH_PASSWORD_SECRET: process.env.HASH_PASSWORD_SECRET || 'password_secret',
+  ACCESS_TOKEN_SECRET_KEY: process.env.ACCESS_TOKEN_SECRET_KEY || 'access_token_secret_key',
+  REFRESH_TOKEN_SECRET_KEY: process.env.REFRESH_TOKEN_SECRET_KEY || 'refresh_token_secret_key',
+  ACCESS_TOKEN_LIFE: process.env.ACCESS_TOKEN_LIFE || '1h',
+  REFRESH_TOKEN_LIFE: process.env.REFRESH_TOKEN_LIFE || '1d',
+  EMAIL_VERIFY_TOKEN_SECRET_KEY: process.env.EMAIL_VERIFY_TOKEN_SECRET_KEY || 'email_verify_token_secret_key',
+  EMAIL_VERIFY_TOKEN_LIFE: process.env.EMAIL_VERIFY_TOKEN_LIFE || '10m',
+  CLIENT_URL: process.env.CLIENT_URL || 'http://localhost:3000',
+  CLIENT_PARTNER_URL: process.env.CLIENT_URL || 'http://localhost:3002',
+  HOST: process.env.HOST || 'smtp.gmail.com',
+  SERVICE: process.env.SERVICE || 'gmail',
+  SECURE: process.env.SECURE || true,
+  EMAIL_PORT: process.env.EMAIL_PORT || 587,
+  USER: process.env.AUTH_EMAIL || 'auth',
+  PASS: process.env.AUTH_PASS || 'pass',
+  cloud_name: process.env.cloud_name || 'dlh4hdsex',
+  api_key: process.env.api_key || '354316823999667',
+  api_secret: process.env.api_secret || 'E2C-Ztk9ay8lL7UBkiQcNb9MEro'
+}
+export default envConfig
